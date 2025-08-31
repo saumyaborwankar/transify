@@ -1,0 +1,35 @@
+{
+  "name": "twinmind-transciber-extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension that captures audio from browser tabs and provides real-time transcription with a user-friendly sidepanel interface",
+  "main": "background.js",
+  "scripts": {
+    "build": "node generate_icons.js",
+    "package": "zip -r extension.zip . -x \"*.git*\" \"node_modules/*\" \"*.DS_Store\" \"package.json\" \"package-lock.json\" \"generate_icons.js\"",
+    "dev": "echo 'Load extension in Chrome: chrome://extensions/ -> Developer mode -> Load unpacked'",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "chrome-extension",
+    "audio-transcription",
+    "real-time",
+    "speech-to-text",
+    "whisper",
+    "deepgram",
+    "google-speech",
+    "fireworks",
+    "langchain"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@langchain/core": "^0.2.0",
+    "@langchain/openai": "^0.1.0",
+    "@langchain/google-genai": "^0.1.0",
+    "@langchain/community": "^0.1.0",
+    "langchain": "^0.1.0"
+  }
+}
