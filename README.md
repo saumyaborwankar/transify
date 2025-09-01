@@ -2,6 +2,8 @@
 
 A Chrome extension that captures audio directly from browser tabs and transcribes it in real time, displayed in a clean, user-friendly side panel.
 
+## DEMO
+[![Watch the demo](demo/thumbnail.png)](demo/transify-demo.mp4)
 ## 🎯 Features
 
 ### Core
